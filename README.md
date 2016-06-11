@@ -9,6 +9,8 @@ As with any Docker image, you can run it in a number of ways, some of these are 
 
 Note that you have to bind port 6667 on the container to a port on your host (3030 in the examples) to be able to connect your IRC client to ZNC and to be able to access the web interface.
 
+Default **webadmin** username / password is admin / admin. Don't forget to change this before you expose the container to the world.
+
 #### Examples:
 All examples will assume that your container is named 'znc'.
 
