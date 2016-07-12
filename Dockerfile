@@ -7,7 +7,7 @@ ENV ZNCMOD /znc-data/modules
 RUN apk add --update \
     znc ca-certificates su-exec \
     && rm -rf /var/cache/apk/* \
-    && mkdir $ZNCDATA && chown znc $ZNCDATA
+    && mkdir "$ZNCDATA" && chown znc "$ZNCDATA"
 
 COPY docker-entrypoint.sh /
 COPY znc.conf.default /
